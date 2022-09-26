@@ -1,0 +1,37 @@
+*::before, *::after, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+form{
+    width: 100%;
+}
+form table{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50% -50%); 
+}
+input[type="button"]{
+    background: #fff;
+    color: #000;
+    width: 100%;
+    height: 6vh;
+    font-size: 17px;
+    margin-top: 0.5rem;
+}
+input[type="button"]:hover{
+    background: rgb(199, 196, 196);
+    color: #000;
+}
+input[type="text"]{
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 17px;
+    outline: 2px solid transparent;
+}
+input[type='text']:hover{
+    outline: 2px solid #fff;
+}

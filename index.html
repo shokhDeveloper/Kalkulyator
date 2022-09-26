@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form name="calculyator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input disabled type="text" name="display" id="display" placeholder="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="yetti" value="7" onclick="calculyator.display.value+='7'" class="inputBtn" > <!-- shuni oncllick holatida yettini usha calculyator ichidagi displayni valuesiga +=7 qushib bor degan ma'noni bildiradi ... -->
+                </td>
+                <td>
+                    <input class="inputBtn" type="button" name="sakkiz" value="8" onclick="calculyator.display.value+='8'" >
+                </td>
+                <td>
+                    <input type="button" name="tuqqiz" value="9" onclick="calculyator.display.value+='9'" class="inputBtn">
+                </td>
+                <td>
+                    <input class="inputBtn" type="button" name="tuqqiz" value="*" onclick="calculyator.display.value+='*'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="inputBtn" name="turt" value="4" onclick="calculyator.display.value+='4'"> <!-- shuni oncllick holatida yettini usha calculyator ichidagi displayni valuesiga +=7 qushib bor degan ma'noni bildiradi ... -->
+                </td>
+                <td>
+                    <input type="button" name="besh" class="inputBtn" value="5" onclick="calculyator.display.value+='5'">
+                </td>
+                <td>
+                    <input class="inputBtn" type="button" name="olti" value="6" onclick="calculyator.display.value+='6'">
+                </td>
+                <td>
+                    <input type="button" class="inputBtn" name="ayir" value="-" onclick="calculyator.display.value+='-'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="bir" class="inputBtn" value="1" onclick="calculyator.display.value+=1"> <!-- shuni oncllick holatida yettini usha calculyator ichidagi displayni valuesiga +=7 qushib bor degan ma'noni bildiradi ... -->
+                </td>
+                <td>
+                    <input class="inputBtn" type="button" name="ikki" value="2" onclick="calculyator.display.value+=2">
+                </td>
+                <td>
+                    <input type="button" class="inputBtn" name="uch" value="3" onclick="calculyator.display.value+=3">
+                </td>
+                <td>
+                    <input type="button" name="qush" class="inputBtn" value="+" onclick="calculyator.display.value+='+'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="inputBtn" name="clear" value="C" onclick="calculyator.display.value=''">
+                </td>
+                <td>
+                    <input class="inputBtn" type="button" name="null" value="0" onclick="calculyator.display.value+='0'">
+                </td>
+                <td>
+                    <input type="button" class="inputBtn" name="result" value="=" onclick=" calculyator.display.value = eval(calculyator.display.value)">
+                </td>
+                <td>
+                    <input type="button" name="bul" class="inputBtn" value="/" onclick="calculyator.display.value+='/'">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div class="parent">
+        
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
